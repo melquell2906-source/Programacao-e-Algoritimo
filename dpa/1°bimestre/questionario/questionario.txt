@@ -1,0 +1,132 @@
+# 📘 Princípios de Programação de Computadores
+
+## 📌 Introdução
+A programação de computadores consiste em criar instruções para que o computador execute tarefas e resolva problemas. Essas instruções são chamadas de algoritmos e são escritas em linguagens de programação.
+
+---
+
+## 🧠 1. Conceitos fundamentais
+
+### 🔹 O que é um algoritmo
+Um algoritmo é uma sequência de passos organizados para resolver um problema.
+
+📌 Exemplo do cotidiano:
+Preparar um café:
+- colocar água
+- aquecer a água
+- passar café
+- servir
+
+---
+
+### 🔹 Lógica de programação
+É a forma de organizar o raciocínio para resolver problemas de forma lógica e estruturada.
+
+### 🔹 Relação entre lógica e algoritmos
+A lógica de programação é o raciocínio, enquanto o algoritmo é a descrição desse raciocínio em passos.
+
+---
+
+## 💻 2. Exemplo de algoritmo
+
+### Problema: média de duas notas
+
+Passos:
+- receber nota 1
+- receber nota 2
+- somar as notas
+- dividir por 2
+
+---
+
+## ⚙️ 3. Código e execução
+
+### 🔹 Código-fonte
+É o código escrito pelo programador.
+
+### 🔹 Código objeto
+Versão intermediária após compilação.
+
+### 🔹 Executável
+Programa final pronto para rodar.
+
+---
+
+## 🔄 4. Compilador e interpretador
+
+### 🔹 Compilador
+Traduz todo o código antes da execução.
+Ex: C, C++, Rust
+
+### 🔹 Interpretador
+Executa linha por linha.
+Ex: Python, JavaScript
+
+---
+
+## 🛠️ 5. Ferramentas de desenvolvimento
+
+### 🔹 IDE
+Ambiente de desenvolvimento com várias ferramentas.
+Ex: VS Code, Eclipse
+
+### 🔹 Bibliotecas
+Conjuntos de códigos reutilizáveis.
+
+### 🔹 Frameworks
+Estruturas prontas para desenvolvimento.
+Ex: React, Django
+
+---
+
+## 🧪 6. Portugol Studio
+
+O Portugol Studio é uma ferramenta para aprender lógica de programação usando linguagem semelhante ao português.
+
+### Exemplo:
+
+```portugol
+programa
+{
+    funcao inicio()
+    {
+        inteiro numero
+
+        escreva("Digite um número: ")
+        leia(numero)
+
+        escreva("Você digitou: ", numero)
+    }
+}
+🔍 7. Explicação do programa
+
+O programa:
+
+pede um número
+armazena em uma variável
+mostra o número digitado
+
+📌 Fluxo:
+Entrada → Processamento → Saída
+programa
+{
+    funcao inicio()
+    {
+        inteiro a, b, soma
+
+        escreva("Digite o primeiro número: ")
+        leia(a)
+
+        escreva("Digite o segundo número: ")
+        leia(b)
+
+        soma = a + b
+
+        escreva("Resultado: ", soma)
+    }
+}
+💡 9. Reflexão
+
+Ferramentas como IDEs, bibliotecas e frameworks são importantes porque aceleram o desenvolvimento e evitam que o programador precise criar tudo do zero.
+
+Sem essas ferramentas, o desenvolvimento seria mais lento, difícil e sujeito a erros.

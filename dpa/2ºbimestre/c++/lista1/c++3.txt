@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int numero;
+    int soma = 0;
+
+    while (true) {
+
+        cout << "Digite um numero: ";
+        cin >> numero;
+
+        // condição de parada
+        if (numero < 0) {
+            break;
+        }
+
+        soma = soma + numero;
+    }
+
+    cout << "A soma é: " << soma;
+
+    return 0;
+}

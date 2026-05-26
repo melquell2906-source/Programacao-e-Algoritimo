@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int final, multiplo;
+
+    cout << "Digite o numero final: ";
+    cin >> final;
+
+    cout << "Digite o numero base dos multiplos: ";
+    cin >> multiplo;
+
+    cout << "\nMultiplos de " << multiplo << " ate " << final << ":\n";
+
+    for (int i = 1; i <= final; i++) {
+        if (i % multiplo == 0) {
+            cout << i << " ";
+        }
+    }
+
+    return 0;
+}
