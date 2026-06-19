@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numero, soma = 0;
+    long long multiplicacao = 1;
+
+    while (soma <= 100) {
+        cout << "Digite um numero: ";
+        cin >> numero;
+
+        soma += numero;
+        multiplicacao *= numero;
+    }
+
+    cout << "\nMultiplicacao dos numeros = "
+         << multiplicacao << endl;
+
+    return 0;
+}

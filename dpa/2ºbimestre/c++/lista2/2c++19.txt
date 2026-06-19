@@ -1,0 +1,59 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int v[10];
+    int pares[10], impares[10], soma[10];
+    int p = 0, i = 0;
+
+    cout << "Digite 10 numeros:" << endl;
+
+    // Leitura
+    for (int k = 0; k < 10; k++) {
+        cin >> v[k];
+    }
+
+    // Separação
+    for (int k = 0; k < 10; k++) {
+        if (v[k] % 2 == 0) {
+            pares[p] = v[k];
+            p++;
+        } else {
+            impares[i] = v[k];
+            i++;
+        }
+    }
+
+    // Ordenação dos vetores usados
+    sort(pares, pares + p);
+    sort(impares, impares + i);
+
+    // Soma em um terceiro vetor
+    int tam = min(p, i);
+
+    for (int k = 0; k < tam; k++) {
+        soma[k] = pares[k] + impares[k];
+    }
+
+    // Exibição
+    cout << "\nPares ordenados:" << endl;
+    for (int k = 0; k < p; k++) {
+        cout << pares[k] << " ";
+    }
+
+    cout << "\n\nImpares ordenados:" << endl;
+    for (int k = 0; k < i; k++) {
+        cout << impares[k] << " ";
+    }
+
+    cout << "\n\nSoma dos vetores:" << endl;
+    for (int k = 0; k < tam; k++) {
+        cout << soma[k] << " ";
+    }
+
+    cout << endl;
+
+    return 0;
+}

@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+const double PI = 3.14159265359;
+
+// Função para calcular área do círculo
+double areaCirculo(double raio) {
+    return PI * raio * raio;
+}
+
+int main() {
+    double raio;
+    double soma = 0;
+
+    cout << "Digite o raio de 5 circulos:" << endl;
+
+    for (int i = 1; i <= 5; i++) {
+        cout << "Raio " << i << ": ";
+        cin >> raio;
+
+        soma += areaCirculo(raio);
+    }
+
+    cout << "Soma das areas dos 5 circulos: " << soma << endl;
+
+    return 0;
+}

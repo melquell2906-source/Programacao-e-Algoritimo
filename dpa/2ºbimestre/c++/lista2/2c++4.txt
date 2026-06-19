@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+// Função de adição
+int soma(int a, int b) {
+    return a + b;
+}
+
+// Função de subtração
+int subtracao(int a, int b) {
+    return a - b;
+}
+
+// Função de multiplicação
+int multiplicacao(int a, int b) {
+    return a * b;
+}
+
+// Função de divisão
+double divisao(int a, int b) {
+    return (double)a / b;
+}
+
+int main() {
+    int num1, num2;
+
+    cout << "Digite o primeiro numero: ";
+    cin >> num1;
+
+    cout << "Digite o segundo numero: ";
+    cin >> num2;
+
+    cout << "Adicao: " << soma(num1, num2) << endl;
+    cout << "Subtracao: " << subtracao(num1, num2) << endl;
+    cout << "Multiplicacao: " << multiplicacao(num1, num2) << endl;
+
+    if (num2 != 0) {
+        cout << "Divisao: " << divisao(num1, num2) << endl;
+    } else {
+        cout << "Divisao impossivel (divisao por zero)." << endl;
+    }
+
+    return 0;
+}

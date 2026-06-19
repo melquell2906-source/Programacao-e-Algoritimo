@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+// Função para analisar a ordem dos números
+string verificarOrdem(int v[]) {
+    bool crescente = true;
+    bool decrescente = true;
+
+    for (int i = 0; i < 4; i++) {
+        if (v[i] >= v[i + 1])
+            crescente = false;
+
+        if (v[i] <= v[i + 1])
+            decrescente = false;
+    }
+
+    if (crescente)
+        return "Ordem crescente";
+    else if (decrescente)
+        return "Ordem decrescente";
+    else
+        return "Nao ordenados";
+}
+
+int main() {
+    int numeros[5];
+
+    cout << "Digite 5 numeros:" << endl;
+
+    for (int i = 0; i < 5; i++) {
+        cin >> numeros[i];
+    }
+
+    cout << verificarOrdem(numeros) << endl;
+
+    return 0;
+}

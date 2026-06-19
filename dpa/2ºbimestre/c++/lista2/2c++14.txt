@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    vector<string> nomes(10);
+
+    cout << "Digite 10 nomes:" << endl;
+
+    for (int i = 0; i < 10; i++) {
+        cin >> nomes[i];
+    }
+
+    // Ordena em ordem decrescente
+    sort(nomes.begin(), nomes.end(), greater<string>());
+
+    // Agora exibe em ordem crescente (invertendo)
+    cout << "Nomes em ordem crescente:" << endl;
+
+    for (int i = nomes.size() - 1; i >= 0; i--) {
+        cout << nomes[i] << endl;
+    }
+
+    return 0;
+}

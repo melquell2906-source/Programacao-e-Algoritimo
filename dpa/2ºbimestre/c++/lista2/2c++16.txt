@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int vetor[15];
+
+    cout << "Digite 15 numeros:" << endl;
+
+    for (int i = 0; i < 15; i++) {
+        cin >> vetor[i];
+    }
+
+    int menor = vetor[0];
+    int maior = vetor[0];
+    int indiceMenor = 0;
+    int indiceMaior = 0;
+
+    for (int i = 1; i < 15; i++) {
+        if (vetor[i] < menor) {
+            menor = vetor[i];
+            indiceMenor = i;
+        }
+
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+            indiceMaior = i;
+        }
+    }
+
+    cout << "Indice do menor valor: " << indiceMenor << endl;
+    cout << "Indice do maior valor: " << indiceMaior << endl;
+
+    return 0;
+}

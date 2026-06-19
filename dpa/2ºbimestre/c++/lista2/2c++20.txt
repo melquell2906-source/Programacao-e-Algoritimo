@@ -1,0 +1,23 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    int v[10];
+
+    cout << "Digite 10 numeros:" << endl;
+
+    // Leitura
+    for (int i = 0; i < 10; i++) {
+        cin >> v[i];
+    }
+
+    // Ordenação crescente
+    sort(v, v + 10);
+
+    // Terceiro menor valor (índice 2)
+    cout << "Terceiro menor valor: " << v[2] << endl;
+
+    return 0;
+}

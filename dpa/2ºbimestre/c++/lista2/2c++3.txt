@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+// Função para peso ideal masculino
+double pesoMasculino(double altura) {
+    return 72.7 * altura - 58;
+}
+
+// Função para peso ideal feminino
+double pesoFeminino(double altura) {
+    return 62.1 * altura - 44.7;
+}
+
+int main() {
+    char sexo;
+    double altura;
+
+    cout << "Digite o sexo (M/F): ";
+    cin >> sexo;
+
+    cout << "Digite a altura: ";
+    cin >> altura;
+
+    if (sexo == 'M' || sexo == 'm') {
+        cout << "Peso ideal: "
+             << pesoMasculino(altura) << " kg" << endl;
+    }
+    else if (sexo == 'F' || sexo == 'f') {
+        cout << "Peso ideal: "
+             << pesoFeminino(altura) << " kg" << endl;
+    }
+    else {
+        cout << "Sexo invalido!" << endl;
+    }
+
+    return 0;
+}

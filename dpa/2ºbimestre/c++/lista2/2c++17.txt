@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int v1[10], v2[10];
+    int soma = 0;
+
+    cout << "Digite 10 numeros:" << endl;
+
+    // Leitura do vetor original
+    for (int i = 0; i < 10; i++) {
+        cin >> v1[i];
+    }
+
+    // Criar vetor com sinais invertidos
+    for (int i = 0; i < 10; i++) {
+        v2[i] = -v1[i];
+    }
+
+    // Somar apenas valores positivos dos dois vetores
+    for (int i = 0; i < 10; i++) {
+        if (v1[i] > 0) {
+            soma += v1[i];
+        }
+
+        if (v2[i] > 0) {
+            soma += v2[i];
+        }
+    }
+
+    cout << "Soma dos valores positivos dos dois vetores: " << soma << endl;
+
+    return 0;
+}
